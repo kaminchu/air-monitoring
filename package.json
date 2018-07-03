@@ -51,6 +51,8 @@
     "express": "^4.16.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "sequelize": "^4.38.0",
+    "sqlite3": "^4.0.1",
     "styled-components": "^3.3.2"
   },
   "homepage": "https://gitlab.com/kmchu/air-monitoring#README",
