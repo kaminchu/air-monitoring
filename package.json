@@ -10,7 +10,7 @@
     "lint": "eslint ./src",
     "test": "jest",
     "coverage": "npm run test -- --coverage",
-    "server": "babel-node ./src/server/index.js",
+    "server": "NODE_ENV=development babel-node ./src/server/index.js",
     "build:server": "rm -rf build && mkdir build && babel -d ./build ./src/server -s"
   },
   "repository": {
@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "express": "^4.16.3",
+    "i2c-bme280": "^1.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "sequelize": "^4.38.0",
