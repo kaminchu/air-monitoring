@@ -9,7 +9,9 @@
     "flow": "flow",
     "lint": "eslint ./src",
     "test": "jest",
-    "coverage": "npm run test -- --coverage"
+    "coverage": "npm run test -- --coverage",
+    "server": "babel-node ./src/server/index.js",
+    "build:server": "rm -rf build && mkdir build && babel -d ./build ./src/server -s"
   },
   "repository": {
     "type": "git",
