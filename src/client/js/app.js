@@ -1,10 +1,11 @@
 // @flow
 import React from "react";
 import ReactDOM from "react-dom";
+import Charts from "./containers/charts";
 
 const App = () => (
   <div>
-    Hello World!!
+    <Charts/>
   </div>
 );
 

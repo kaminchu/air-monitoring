@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: process.env.WEBPACK_SERVE ? "development" : "production",
   target: "node",
-  entry: "./src/client/js/app.js",
+  entry: ["babel-polyfill", "./src/client/js/app.js"],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "./public")
